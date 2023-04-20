@@ -1,0 +1,266 @@
+/* Librerias de fuentes para textos y para botones de redes sociales*/
+    @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@400;700;900&display=swap');
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/* Reinicio */
+    *{
+        font-family: Roboto;
+        margin: 0;
+        padding: 0;
+        line-height: 23px;
+    }
+
+/* Estilos generales */
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+    }
+
+    img{
+        object-fit: cover;
+        height: auto;
+        width: 100%;
+    }
+
+    .capa{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background: #1c1c1d;
+        opacity:0.5;
+        mix-blend-mode: overlay;
+    }
+
+    /* -------- Codigo para mantener el footer siempre al final de la pagina -------- */
+    html {
+        height: 100%;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+
+
+/* Estilos header */
+    .header{
+        background-color: rgba(20,20,20,0.5);
+        position:relative;
+        z-index:2;
+        color: #fff;
+    }
+
+    .logo{
+        display: inline-block;
+        height: 8%;
+        width: 8%;
+        margin-left: 5%;
+    }
+
+    .nav{
+        position: absolute;
+        right: 5%;
+        top: 40%;
+        display: inline-block;
+        width: 40%;
+        list-style:none;
+    }
+
+    .item{
+        display:inline;
+        margin: 1%;
+    }
+
+    .item a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+/* Estilos footer */
+    footer{
+        background-color: rgba(20,20,20,0.5);
+        position: relative;
+        padding-left: 80%;
+        margin-top: auto;
+        color: #fff;
+    }
+
+    .fab{
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+    }
+
+/* Estilos pagina index */
+    .main{
+        position:relative;
+        z-index:2;
+        color: #fff;
+        margin-top: 2%;
+        margin-left: 6%;
+    }
+
+    .imagen-index{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 14vw;
+    }
+
+    .h1-index{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    h2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .seccion-1{
+        width: 90%;
+    }
+
+    .seccion-2{
+        position:absolute;
+        right:12%;
+        top:0;
+        width:30vw;
+        margin-top: 20px;
+        
+    }
+
+/* Estilos pagina sobre mi */
+    .main-sobre-mi{
+        position:relative;
+        z-index:2;
+        color: #fff;
+        margin-top: 40px;
+        margin-left: 6%;
+    }
+
+    .sobre-mi{
+        display:inline-block;
+        max-width: 65%;
+        padding-right: 10%;
+        position: absolute;
+    }
+
+    .h1-sobre-mi{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .seccion-3-sobre-mi{
+        padding-top: 5px;
+    }
+
+    .seccion-3-lista{
+        margin-top: 2%;
+        margin-left: 2.2%;
+    }
+
+
+    .imagen-sobre-mi{
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        position: absolute;
+        right: 11%;
+    }
+
+
+
+/* Estilos pagina experiencia */
+
+    .main-experiencia{
+        position:relative;
+        z-index:2;
+        color: #fff;
+        margin-top: 40px;
+        margin-left: 6%;
+    }
+
+    .h2-experiencia{
+        font-size: 18px;
+    }
+
+    .h1-experiencia{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .imagen-curriculum{
+        width: 250px;
+        height: 250px;
+        display: inline-flex;
+    }
+
+    .seccion-3-experiencia{
+        max-width: 87.5%;
+    }
+
+/* Estilos pagina proyectos */
+
+    .main-proyectos{
+        position:relative;
+        z-index:2;
+        color: #fff;
+        margin-top: 40px;
+        margin-left: 6%;
+    }
+
+    .imagen-proyecto{
+        width: 15%;
+        height: 15%;
+        display: inline-block;
+    }
+
+    .texto-proyecto{
+        display: inline-block;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+/* Estilos pagina contacto  */
+
+    .main-contacto{
+        position:relative;
+        z-index:2;
+        color: #fff;
+        margin-top: 40px;
+        margin-left: 6%;
+    }
+    
+    .formulario h1{
+        margin-bottom: 2%;
+    }
+
+    .formulario input{
+        width: 40%;
+        background-color: rgba(20,20,20,0.8);
+        border: solid rgb(255, 255, 255, 0.2) 1px;
+        color:#fff;
+
+    }
+
+    .formulario textarea{
+        width: 40%;
+        background-color: rgba(20,20,20,0.8);
+        border: solid rgb(255, 255, 255, 0.2) 1px;
+        color:#fff;
+
+    }
+
+    .formulario .botton{
+        background-color: rgba(20,20,20,0.8);
+        border: solid rgb(255, 255, 255, 0.2) 1px;
+        color:#fff;
+
+    }
