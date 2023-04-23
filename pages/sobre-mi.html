@@ -1,62 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../resources/Icono-de-pagina.png">
     <title>Sobre mi - MM</title>
 </head>
+
 <body>
-        <header class="header">
-<!---------- Logo ---------->
-            <div class="logo">
-                <a href="../index.html"><img src="../resources/Logo.png" alt="Imagen del logo"></a>
-            </div>
-<!---------- Nav ---------->
-            <nav class="nav">
-                <ul>
-                    <li class="item"><a href="../index.html">INICIO</a></li>
-                    <li class="item"><a href="../pages/sobre-mi.html">SOBRE MI</a></li>
-                    <li class="item"><a href="../pages/experiencia.html">EXPERIENCIA</a></li>
-                    <li class="item"><a href="../pages/proyectos.html">PROYECTOS</a></li>
-                    <li class="item"><a href="../pages/contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </header>
-<!---------- Video de fondo de pagina ---------->
-        <section>
-            <video muted autoplay loop>
-                <source src="../resources/video.mp4" type="video/mp4" >
-            </video>
-            <div class="capa"></div>
-        </section> 
-<!---------- Main ---------->
-        <main class="main-sobre-mi">
-            <div class="sobre-mi">
-                <h1 class="h1-sobre-mi">Sobre mi</h1>
-                <section class="seccion-3-sobre-mi">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio distinctio laudantium nisi perferendis fuga doloremque earum quo sit. Ipsa, quasi error, accusantium dicta aut possimus vel quibusdam illo numquam deserunt ducimus ipsum. Deserunt, nesciunt amet iure culpa numquam deleniti, veritatis ipsam repellat debitis tempore earum iusto, praesentium delectus cum! Voluptatibus libero vitae nesciunt, veritatis quibusdam nostrum saepe fuga, aspernatur accusantium necessitatibus, porro nam quos ducimus ratione autem! Corporis nulla mollitia vel velit, neque accusamus tenetur voluptate, et at ipsa, quasi laboriosam iusto quibusdam? Impedit velit magni saepe odio perspiciatis sapiente sit ipsa eius numquam asperiores nobis explicabo, commodi soluta unde nemo ex corporis beatae reprehenderit veniam! Delectus necessitatibus laboriosam sapiente explicabo possimus, autem accusamus sit, incidunt enim aspernatur, totam quas.</p>
-                    <ul class="seccion-3-lista">
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+    <header class="fixed-top">
+        <!---------- Nav ---------->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="../resources/Logo.png" alt="Imagen del logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/sobre-mi.html">SOBRE MI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/experiencia.html">EXPERIENCIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/proyectos.html">PROYECTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/contacto.html">CONTACTO</a>
+                        </li>
+                        
                     </ul>
-                </section>
+                </div>
             </div>
-            <section class="imagen-sobre-mi">
-                <img src="../resources/Yo.png" alt="#">
+        </nav>
+    </header>
+    <!---------- Video de fondo de página ---------->
+    <section class="videoBackground">
+        <video muted autoplay loop>
+            <source src="../resources/video.mp4" type="video/mp4">
+        </video>
+        <div class="capa"></div>
+    </section>
+    <!---------- Main ---------->
+    <main class="main-sobre-mi">
+        <div class="sobre-mi">
+            <h1 class="h1-sobre-mi">Sobre mi</h1>
+            <section class="seccion-3-sobre-mi">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio distinctio laudantium nisi perferendis
+                    fuga doloremque earum quo sit. Ipsa, quasi error, accusantium dicta aut possimus vel quibusdam illo
+                    numquam deserunt ducimus ipsum. Deserunt, nesciunt amet iure culpa numquam deleniti, veritatis ipsam
+                    repellat debitis tempore earum iusto, praesentium delectus cum! Voluptatibus libero vitae nesciunt,
+                    veritatis quibusdam nostrum saepe fuga, aspernatur accusantium necessitatibus, porro nam quos
+                    ducimus ratione autem! Corporis nulla mollitia vel velit, neque accusamus tenetur voluptate, et at
+                    ipsa, quasi laboriosam iusto quibusdam? Impedit velit magni saepe odio perspiciatis sapiente sit
+                    ipsa eius numquam asperiores nobis explicabo, commodi soluta unde nemo ex corporis beatae
+                    reprehenderit veniam! Delectus necessitatibus laboriosam sapiente explicabo possimus, autem
+                    accusamus sit, incidunt enim aspernatur, totam quas.</p>
+                <ul class="seccion-3-lista">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                </ul>
             </section>
-        </main>
-<!---------- Footer ---------->
-        <footer>
-<!---------- Redes sociales ---------->
-            <div>
-                <a href="https://www.facebook.com/martin.maldonado.31521/"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/martinmaldo9/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/TuPerfilDeLinkedIn"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </footer>
+        </div>
+        <section class="imagen-sobre-mi">
+            <img src="../resources/Yo.png" alt="#">
+        </section>
+    </main>
+    <!---------- Footer ---------->
+    <footer>
+        <!---------- Redes sociales ---------->
+        <div>
+            <a href="https://www.facebook.com/martin.maldonado.31521/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/martinmaldo9/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/TuPerfilDeLinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

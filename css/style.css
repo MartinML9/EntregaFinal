@@ -23,6 +23,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
+        height: 150vh;
         transform: translate(-50%, -50%);
         z-index: -1;
     }
@@ -48,6 +49,18 @@
 
 /* Estilos header */
 
+    .logo{
+        height: 10vh;
+
+    }
+    .bg-body-tertiary{
+        background-color: RGBA(0,0,0,0.4) !IMPORTANT;
+    }
+
+    #navbarNav{
+            justify-content: flex-end;
+            padding-left: 25px;
+        }
 /* Estilos footer */
 
 /* Estilos pagina index */
@@ -59,3 +72,10 @@
 /* Estilos pagina proyectos */
 
 /* Estilos pagina contacto  */
+
+@media(min-width: 992px){
+    #navbarNav{
+        justify-content: flex-end;
+        padding-right: 2%;
+    }
+}
