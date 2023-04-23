@@ -7,7 +7,6 @@
         font-family: Roboto;
         margin: 0;
         padding: 0;
-        line-height: 23px;
     }
 
 /* Estilos generales */
@@ -51,16 +50,14 @@
 
     .logo{
         height: 10vh;
-
     }
     .bg-body-tertiary{
         background-color: RGBA(0,0,0,0.4) !IMPORTANT;
     }
-
     #navbarNav{
-            justify-content: flex-end;
-            padding-left: 25px;
-        }
+        justify-content: flex-end;
+        padding-left: 25px;
+    }
 /* Estilos footer */
 
 /* Estilos pagina index */
@@ -73,9 +70,8 @@
 
 /* Estilos pagina contacto  */
 
-@media(min-width: 992px){
+@media(min-width: 768px){
     #navbarNav{
-        justify-content: flex-end;
         padding-right: 2%;
     }
 }
