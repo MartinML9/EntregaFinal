@@ -7,6 +7,8 @@
         font-family: Roboto;
         margin: 0;
         padding: 0;
+        color: #fff;
+        line-height: 20px;
     }
 
 /* Estilos generales */
@@ -27,42 +29,91 @@
         z-index: -1;
     }
 
-    /* img{
+    img{
+        border-radius: 10px;
         object-fit: cover;
         height: auto;
         width: 100%;
     }
-
+    
     .capa{
-        position: absolute;
+        position: fixed;
         top:0;
         left:0;
         width:100%;
         height:100%;
-        background: #1c1c1d;
-        opacity:0.5;
-        mix-blend-mode: overlay;
-    } */
+        z-index:-1;
+        background: rgba(0,0,0,0.5);
+        mix-blend-mode:multiply;
+    }
 
     /* -------- Codigo para mantener el footer siempre al final de la pagina -------- */
 
 /* Estilos header */
-
     .logo{
         height: 10vh;
+        transition: 0.3s;
+    }
+    .logo:hover{
+        transform: rotate(-90deg);
     }
     .bg-body-tertiary{
         background-color: RGBA(0,0,0,0.4) !IMPORTANT;
     }
-    #navbarNav{
+    .ancho-restringido{
+        max-width: 1200px;
+    }
+    .navbar-collapse{
         justify-content: flex-end;
+    }
+    .nav-link{
+        height: 40px;
+        transition: all 0.5s;
+        border-radius: 4px;
         padding-left: 25px;
     }
+    .nav-link:hover{
+        transform: translateY(2px);
+        padding-top: 15px;
+        background-color: rgba(255, 255, 255,0.1) !important;
+    }
+
 /* Estilos footer */
+    footer{
+        margin-top: 15px;
+        display: block;
+    }
+    .fab{
+        padding: 0 10px;
+    }
 
 /* Estilos pagina index */
+    .main-index{
+        padding-top: 16vh;
+    } 
+    .imagen-index{
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+    }
+    ul{
+        padding-left: 1rem;
+    }
 
 /* Estilos pagina sobre mi */
+    .main-sobre-mi{
+        padding: 16vh 8vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen-sobre-mi{
+        padding: 4vw;
+        max-width: 600px;
+        margin: auto;
+    }
+    .imagen-sobre-mi img{
+        max-height: 80vh;
+    }
 
 /* Estilos pagina experiencia */
 
@@ -70,8 +121,41 @@
 
 /* Estilos pagina contacto  */
 
+
 @media(min-width: 768px){
-    #navbarNav{
-        padding-right: 2%;
-    }
+    
+    /* Estilos header */
+        #navbarNav{
+            padding-right: 2%;
+        }
+
+    /* Estilos pagina index */
+        .seccion2{
+            padding-left: 40px;
+        }
+        .imagen-index{
+            padding: 0;
+        }
+    /* Estilos pagina sobre mi */
+        .main-sobre-mi{
+            margin-bottom: 44px;
+            padding: 16vh 4vw 0 4vw;
+            max-width: 1250px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .sobre-mi{
+            max-width: 60vw;
+        }
+        .imagen-sobre-mi{
+            padding: 0;
+            margin: 0;
+            max-width: 600px;
+            display: flex;
+        }
+        .imagen-sobre-mi img{
+            margin-right: 2vw;
+            max-height: 70vh;
+        }
 }
