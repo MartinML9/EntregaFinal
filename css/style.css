@@ -47,7 +47,15 @@
         mix-blend-mode:multiply;
     }
 
-    /* -------- Codigo para mantener el footer siempre al final de la pagina -------- */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .carousel {
+        width: 60%;
+        height: 60%;
+    }   
 
 /* Estilos header */
     .logo{
@@ -88,7 +96,7 @@
     }
 
 /* Estilos pagina index */
-    .main-index{
+    .main-bajar-contenido{
         padding-top: 16vh;
     } 
     .imagen-index{
@@ -116,12 +124,44 @@
     }
 
 /* Estilos pagina experiencia */
-
-/* Estilos pagina proyectos */
+.h5-experiencia{
+    margin-top: 10px;
+}
 
 /* Estilos pagina contacto  */
+.main-contacto{
+    position:relative;
+    z-index:2;
+    color: #fff;
+    margin-top: 40px;
+    margin-left: 6%;
+}
 
+.formulario h1{
+    margin-bottom: 2%;
+}
 
+.formulario input{
+    width: 40%;
+    background-color: rgba(20,20,20,0.8);
+    border: solid rgb(255, 255, 255, 0.2) 1px;
+    color:#fff;
+}
+
+.formulario textarea{
+    width: 40%;
+    background-color: rgba(20,20,20,0.8);
+    border: solid rgb(255, 255, 255, 0.2) 1px;
+    color:#fff;
+}
+
+.formulario .botton{
+    background-color: rgba(20,20,20,0.8);
+    border: solid rgb(255, 255, 255, 0.2) 1px;
+    color:#fff;
+}
+
+/* Medias Queries */
 @media(min-width: 768px){
     
     /* Estilos header */
@@ -136,6 +176,7 @@
         .imagen-index{
             padding: 0;
         }
+
     /* Estilos pagina sobre mi */
         .main-sobre-mi{
             margin-bottom: 44px;

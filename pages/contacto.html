@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="fixed-top">
-        <!---------- Nav ---------->
+        <!-------------------- Nav -------------------->
         <nav class="navbar navbar-expand-md bg-body-tertiary bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
@@ -31,10 +31,10 @@
                             <a class="nav-link active" aria-current="page" href="../pages/sobre-mi.html">SOBRE MI</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/experiencia.html">EXPERIENCIA</a>
+                            <a class="nav-link active" aria-current="page" href="../pages/proyectos.html">PROYECTOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/proyectos.html">PROYECTOS</a>
+                            <a class="nav-link active" aria-current="page" href="../pages/experiencia.html">EXPERIENCIA</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../pages/contacto.html">CONTACTO</a>
@@ -45,17 +45,19 @@
             </div>
         </nav>
     </header>
-    <!---------- Video de fondo de página ---------->
+    <!-------------------- Video de fondo de página -------------------->
     <section class="videoBackground">
         <video muted autoplay loop>
             <source src="../resources/video.mp4" type="video/mp4">
         </video>
         <div class="capa"></div>
     </section>
-    <main class="main-contacto">
+
+    <main class="main-contacto main-bajar-contenido container">
         <div class="formulario">
             <h1>Contacto</h1>
-            <form action="" method="post">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, eligendi. Aut, corrupti dignissimos quasi nostrum dolorum harum, hic numquam qui sunt deleniti, ut quo odit earum. Tempore, qui. Ipsum laboriosam illum earum nostrum voluptatum suscipit labore dolor delectus amet? Laudantium numquam impedit, quod officiis at alias consequuntur minima obcaecati libero nam ab tenetur ullam nesciunt, est ratione? Officiis, quasi, provident quae animi fugiat voluptatibus, cum itaque laboriosam sunt optio temporibus.</p>
+            <form action="#" method="get">
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br><br>
                 <input type="email" id="email" name="email" placeholder="Email" required><br><br>
                 <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="5" cols="30" required></textarea><br><br>
@@ -63,13 +65,16 @@
             </form>
         </div>
     </main>
-    <footer>
-        <div>
+
+    <footer class="navbar navbar-expand-md bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <!-------------------- Redes sociales -------------------->
+        <div class="container d-flex justify-content-end">
             <a href="https://www.facebook.com/martin.maldonado.31521/"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/martinmaldo9/"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/TuPerfilDeLinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
