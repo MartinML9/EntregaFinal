@@ -1,0 +1,22 @@
+@mixin input-style {
+    width: 40%;
+    background-color: rgba(20, 20, 20, 0.8);
+    border: solid rgba(255, 255, 255, 0.2) 1px;
+    display: block;
+    margin-top: 20px;
+    padding-left: 1%;
+}
+
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin position ($pos, $top, $left, $z-index){
+    position: $pos;
+    top: $top;
+    left: $left;
+    z-index: $z-index;
+}

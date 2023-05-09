@@ -1,0 +1,16 @@
+@import "../utilities/mixins";
+#animationBackground{
+    @include position (fixed, 0, 0, -1);
+    width: 100vw;
+    height: 100vh;
+    video{
+        @include position (absolute, 50%, 50%, -1);
+        height: 150vh;
+        transform: translate(-50%, -50%);
+    }
+    .capa{
+        @extend #animationBackground;
+        background: rgba(0,0,0,0.4);
+        mix-blend-mode:multiply;
+    }
+}

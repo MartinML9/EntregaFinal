@@ -1,0 +1,20 @@
+/* Estilos pagina contacto */
+@import "../utilities/mixins";
+
+.main-contacto {
+    @include position (relative, null, null, 2);
+    margin-top: 40px;
+    margin-left: 6%;
+
+    .formulario {
+        h1 {
+            margin-bottom: 2%;
+        }
+
+        input,
+        textarea,
+        .botton {
+            @include input-style;
+        }
+    }
+}

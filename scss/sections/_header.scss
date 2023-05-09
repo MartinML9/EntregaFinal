@@ -1,0 +1,41 @@
+/* Estilos header */
+.bg-body-tertiary {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+
+    .ancho-restringido {
+        max-width: 1200px;
+
+        .logo {
+            height: 10vh;
+            transition: 0.3s;
+
+            &:hover {
+                transform: rotate(-90deg);
+            }
+        }
+
+        .navbar-collapse {
+            justify-content: flex-end;
+        }
+    }
+}
+
+.nav-link {
+    height: 40px;
+    transition: all 0.5s;
+    border-radius: 4px;
+    padding-left: 25px;
+}
+
+.nav-link:hover {
+    transform: translateY(2px);
+    padding-top: 15px;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Medias Queries */
+@media(min-width: 768px) {
+    #navbarNav {
+        padding-right: 2%;
+    }
+}

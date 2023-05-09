@@ -1,202 +1,21 @@
-/* Librerias de fuentes para textos y para botones de redes sociales*/
-    @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@400;700;900&display=swap');
-    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
-
-/* Reinicio */
-    *{
-        font-family: Roboto;
-        margin: 0;
-        padding: 0;
-        color: #fff;
-        line-height: 20px;
-    }
+@import "./utilities/reseteo";
+@import "./sections/header";
+@import "./components/bg-animation";
+@import "./sections/footer";
+@import "./pages/experiencia";
+@import "./pages/index";
+@import "./pages/proyectos";
+@import "./pages/sobre-mi";
+@import "./pages/contacto";
 
 /* Estilos generales */
-    .videoBackground{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: -1;
-    }
-    video{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        height: 150vh;
-        transform: translate(-50%, -50%);
-        z-index: -1;
-    }
-
-    img{
-        border-radius: 10px;
-        object-fit: cover;
-        height: auto;
-        width: 100%;
-    }
-    
-    .capa{
-        position: fixed;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        z-index:-1;
-        background: rgba(0,0,0,0.5);
-        mix-blend-mode:multiply;
-    }
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        background-color: rgba(0,0,0,0.5);
-    }
-
-    .carousel {
-        width: 60%;
-        height: 60%;
-    }   
-
-/* Estilos header */
-    .logo{
-        height: 10vh;
-        transition: 0.3s;
-    }
-    .logo:hover{
-        transform: rotate(-90deg);
-    }
-    .bg-body-tertiary{
-        background-color: RGBA(0,0,0,0.4) !important;
-    }
-    .ancho-restringido{
-        max-width: 1200px;
-    }
-    .navbar-collapse{
-        justify-content: flex-end;
-    }
-    .nav-link{
-        height: 40px;
-        transition: all 0.5s;
-        border-radius: 4px;
-        padding-left: 25px;
-    }
-    .nav-link:hover{
-        transform: translateY(2px);
-        padding-top: 15px;
-        background-color: rgba(255, 255, 255,0.1) !important;
-    }
-
-/* Estilos footer */
-    footer{
-        margin-top: 15px;
-        display: block;
-    }
-    .fab{
-        padding: 0 10px;
-    }
-
-/* Estilos pagina index */
-    .main-bajar-contenido{
-        padding-top: 16vh;
-    } 
-    .imagen-index{
-        margin-top: 4vh;
-        margin-bottom: 4vh;
-    }
-    ul{
-        padding-left: 1rem;
-    }
-
-/* Estilos pagina sobre mi */
-    .main-sobre-mi{
-        padding: 16vh 8vw;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .imagen-sobre-mi{
-        padding: 4vw;
-        max-width: 600px;
-        margin: auto;
-    }
-    .imagen-sobre-mi img{
-        max-height: 80vh;
-    }
-
-/* Estilos pagina experiencia */
-.h5-experiencia{
-    margin-top: 10px;
+img {
+    border-radius: 10px;
+    object-fit: cover;
+    height: auto;
+    width: 100%;
 }
 
-/* Estilos pagina contacto  */
-.main-contacto{
-    position:relative;
-    z-index:2;
-    color: #fff;
-    margin-top: 40px;
-    margin-left: 6%;
-}
-
-.formulario h1{
-    margin-bottom: 2%;
-}
-
-.formulario input{
-    width: 40%;
-    background-color: rgba(20,20,20,0.8);
-    border: solid rgba(255, 255, 255, 0.2) 1px;
-    color:#fff;
-}
-
-.formulario textarea{
-    width: 40%;
-    background-color: rgba(20,20,20,0.8);
-    border: solid rgba(255, 255, 255, 0.2) 1px;
-    color:#fff;
-}
-
-.formulario .botton{
-    background-color: rgba(20,20,20,0.8);
-    border: solid rgba(255, 255, 255, 0.2) 1px;
-    color:#fff;
-}
-
-/* Medias Queries */
-@media(min-width: 768px){
-    
-    /* Estilos header */
-        #navbarNav{
-            padding-right: 2%;
-        }
-
-    /* Estilos pagina index */
-        .seccion2{
-            padding-left: 40px;
-        }
-        .imagen-index{
-            padding: 0;
-        }
-
-    /* Estilos pagina sobre mi */
-        .main-sobre-mi{
-            margin-bottom: 44px;
-            padding: 16vh 4vw 0 4vw;
-            max-width: 1250px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .sobre-mi{
-            max-width: 60vw;
-        }
-        .imagen-sobre-mi{
-            padding: 0;
-            margin: 0;
-            max-width: 600px;
-            display: flex;
-        }
-        .imagen-sobre-mi img{
-            margin-right: 2vw;
-            max-height: 70vh;
-        }
+body {
+    background-color: #14070c;
 }

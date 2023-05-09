@@ -1,0 +1,9 @@
+@import "./vars";
+
+*{
+    font-family: $main-font;
+    margin: 0;
+    padding: 0;
+    color: $main-text-color;
+    line-height: 20px;
+}
