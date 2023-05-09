@@ -9,6 +9,7 @@
 @import "./pages/contacto";
 
 /* Estilos generales */
+
 img {
     border-radius: 10px;
     object-fit: cover;
@@ -18,4 +19,8 @@ img {
 
 body {
     background-color: #14070c;
+}
+
+.main-bajar-contenido {
+    padding-top: 16vh;
 }

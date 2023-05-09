@@ -64,17 +64,16 @@ footer {
     padding: 0 10px; }
 
 /* Estilos pagina experiencia */
-.h5-experiencia {
+.lista-experiencia__fecha {
   margin-top: 10px; }
 
 /* Estilos pagina index */
-.main-bajar-contenido {
-  padding-top: 16vh; }
-  .main-bajar-contenido .imagen-index {
-    margin-top: 4vh;
-    margin-bottom: 4vh; }
-  .main-bajar-contenido ul {
-    padding-left: 1rem; }
+.imagen-index {
+  margin-top: 4vh;
+  margin-bottom: 4vh; }
+
+ul {
+  padding-left: 1rem; }
 
 @media (min-width: 768px) {
   /* Estilos pagina index */
@@ -128,11 +127,11 @@ footer {
   z-index: 2;
   margin-top: 40px;
   margin-left: 6%; }
-  .main-contacto .formulario h1 {
+  .main-contacto .formulario .formulario__titulo {
     margin-bottom: 2%; }
-  .main-contacto .formulario input,
-  .main-contacto .formulario textarea,
-  .main-contacto .formulario .botton {
+  .main-contacto .formulario .formulario__input,
+  .main-contacto .formulario .formulario__textarea,
+  .main-contacto .formulario .formulario__botton {
     width: 40%;
     background-color: rgba(20, 20, 20, 0.8);
     border: solid rgba(255, 255, 255, 0.2) 1px;
@@ -149,3 +148,6 @@ img {
 
 body {
   background-color: #14070c; }
+
+.main-bajar-contenido {
+  padding-top: 16vh; }

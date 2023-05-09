@@ -7,13 +7,13 @@
     margin-left: 6%;
 
     .formulario {
-        h1 {
+        .formulario__titulo {
             margin-bottom: 2%;
         }
 
-        input,
-        textarea,
-        .botton {
+        .formulario__input,
+        .formulario__textarea,
+        .formulario__botton {
             @include input-style;
         }
     }
