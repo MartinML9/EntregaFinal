@@ -1,5 +1,14 @@
 /* Estilos pagina experiencia */
-.lista-experiencia__fecha{
-    margin-top: 10px;
+.main-experiencia{
+    padding: 0 8vw;
+    margin: auto;
+    .lista-experiencia__fecha{
+        margin-top: 10px;
+    }
 }
+@media(min-width: 576px) {
 
+    .main-experiencia {
+        padding: 0;
+    }
+}

@@ -3,18 +3,25 @@
 
 .main-contacto {
     @include position (relative, null, null, 2);
-    margin-top: 40px;
-    margin-left: 6%;
+    padding: 0 8vw;
+    margin: 0 auto;
+    margin-bottom: 52px;
 
     .formulario {
-        .formulario__titulo {
+        &__titulo {
             margin-bottom: 2%;
         }
 
-        .formulario__input,
-        .formulario__textarea,
-        .formulario__botton {
+        &__input,
+        &__textarea,
+        &__botton {
             @include input-style;
         }
+    }
+}
+@media(min-width: 576px) {
+
+    .main-contacto {
+        padding: 0;
     }
 }

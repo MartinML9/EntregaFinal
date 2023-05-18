@@ -10,7 +10,7 @@
 
 /* Estilos header */
 .bg-body-tertiary {
-  background-color: rgba(0, 0, 0, 0.5) !important; }
+  background-color: rgba(0, 0, 0, 0.9) !important; }
   .bg-body-tertiary .ancho-restringido {
     max-width: 1200px; }
     .bg-body-tertiary .ancho-restringido .logo {
@@ -35,7 +35,9 @@
 /* Medias Queries */
 @media (min-width: 768px) {
   #navbarNav {
-    padding-right: 2%; } }
+    padding-right: 2%; }
+  .bg-body-tertiary {
+    background-color: rgba(0, 0, 0, 0.5) !important; } }
 
 #animationBackground, #animationBackground .capa {
   position: fixed;
@@ -44,13 +46,6 @@
   z-index: -1;
   width: 100vw;
   height: 100vh; }
-  #animationBackground video, #animationBackground .capa video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-    height: 150vh;
-    transform: translate(-50%, -50%); }
   #animationBackground .capa {
     background: rgba(0, 0, 0, 0.4);
     mix-blend-mode: multiply; }
@@ -64,8 +59,15 @@ footer {
     padding: 0 10px; }
 
 /* Estilos pagina experiencia */
-.lista-experiencia__fecha {
-  margin-top: 10px; }
+.main-experiencia {
+  padding: 0 8vw;
+  margin: auto; }
+  .main-experiencia .lista-experiencia__fecha {
+    margin-top: 10px; }
+
+@media (min-width: 576px) {
+  .main-experiencia {
+    padding: 0; } }
 
 /* Estilos pagina index */
 .imagen-index {
@@ -82,16 +84,12 @@ ul {
   .imagen-index {
     padding: 0; } }
 
-.carousel {
-  width: 55%;
-  height: 55%; }
-  .carousel .carousel-control-prev-icon,
-  .carousel .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); }
+.proyectos__imagen {
+  margin: 2% 0; }
 
 /* Estilos pagina sobre mi */
 .main-sobre-mi {
-  padding: 16vh 8vw;
+  padding: 16vh 8vw 0 8vw;
   margin: auto;
   display: flex;
   flex-direction: column; }
@@ -125,19 +123,25 @@ ul {
 .main-contacto {
   position: relative;
   z-index: 2;
-  margin-top: 40px;
-  margin-left: 6%; }
-  .main-contacto .formulario .formulario__titulo {
+  padding: 0 8vw;
+  margin: 0 auto;
+  margin-bottom: 52px; }
+  .main-contacto .formulario__titulo {
     margin-bottom: 2%; }
-  .main-contacto .formulario .formulario__input,
-  .main-contacto .formulario .formulario__textarea,
-  .main-contacto .formulario .formulario__botton {
-    width: 40%;
+  .main-contacto .formulario__input, .main-contacto .formulario__textarea, .main-contacto .formulario__botton {
+    width: 100%;
     background-color: rgba(20, 20, 20, 0.8);
     border: solid rgba(255, 255, 255, 0.2) 1px;
     display: block;
     margin-top: 20px;
     padding-left: 1%; }
+    @media (min-width: 768px) {
+      .main-contacto .formulario__input, .main-contacto .formulario__textarea, .main-contacto .formulario__botton {
+        width: 60%; } }
+
+@media (min-width: 576px) {
+  .main-contacto {
+    padding: 0; } }
 
 /* Estilos generales */
 img {
