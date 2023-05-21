@@ -5,23 +5,35 @@
     @include position (relative, null, null, 2);
     padding: 0 8vw;
     margin: 0 auto;
-    margin-bottom: 52px;
-
+    margin-bottom: 15vh;
+    min-height: 74vh;
     .formulario {
         &__titulo {
-            margin-bottom: 2%;
+            margin-bottom: 5vh;
         }
-
+        &__container{
+            margin-top: 8vh;
+        }
         &__input,
         &__textarea,
         &__botton {
             @include input-style;
         }
+        
     }
 }
 @media(min-width: 576px) {
 
     .main-contacto {
+        min-height: 79.7vh;
         padding: 0;
+    }
+    .formulario {
+        &__titulo {
+            margin-bottom: 5vh;
+        }
+        &__container{
+            margin-top: 10vh;
+        }
     }
 }

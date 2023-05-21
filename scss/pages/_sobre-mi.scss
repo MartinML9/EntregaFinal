@@ -5,7 +5,9 @@
     padding: 16vh 8vw 0 8vw;
     margin: auto;
     @include flex (column, null, null);
-
+    .sobre-mi{
+        padding-left: 4vw;
+    }
     .imagen-sobre-mi {
         padding: 4vw;
         max-width: 600px;
@@ -21,12 +23,13 @@
 
     .main-sobre-mi {
         margin-bottom: 44px;
-        padding: 16vh 4vw 0 4vw;
-        max-width: 1250px;
+        padding: 16vh 4vw 0 8vw;
         @include flex (row, space-between, null);
 
         .sobre-mi {
-            max-width: 60vw;
+            min-height: 74vh;
+            max-width: 50vw;
+            padding-right: 5vw;
         }
 
         .imagen-sobre-mi {
@@ -41,4 +44,9 @@
             }
         }
     }
+}
+
+@media(min-width: 768px) {
+
+
 }

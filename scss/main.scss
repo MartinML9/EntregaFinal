@@ -16,11 +16,19 @@ img {
     height: auto;
     width: 100%;
 }
-
 body {
     background-color: #14070c;
 }
-
-.main-bajar-contenido {
+.container-fluid{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.bajar-contenido {
     padding-top: 16vh;
+}
+
+@media(min-width: 1400px) {
+    .container{
+        max-width: 90%;
+    }
 }

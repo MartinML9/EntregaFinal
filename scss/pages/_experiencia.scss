@@ -2,6 +2,9 @@
 .main-experiencia{
     padding: 0 8vw;
     margin: auto;
+    .bloque-texto__parrafo{
+        margin-top: 3%;
+    }
     .lista-experiencia__fecha{
         margin-top: 10px;
     }
@@ -10,5 +13,7 @@
 
     .main-experiencia {
         padding: 0;
+        min-height: 74vh;
+        margin-bottom: 20.7vh;
     }
 }

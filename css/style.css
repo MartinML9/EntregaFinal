@@ -6,20 +6,24 @@
   margin: 0;
   padding: 0;
   color: #fff;
-  line-height: 20px; }
+  line-height: 19.2px;
+  font-size: 16px; }
+
+@media (min-width: 1700px) {
+  * {
+    font-size: 22.4px;
+    line-height: 26.88px; } }
 
 /* Estilos header */
 .bg-body-tertiary {
   background-color: rgba(0, 0, 0, 0.9) !important; }
-  .bg-body-tertiary .ancho-restringido {
-    max-width: 1200px; }
-    .bg-body-tertiary .ancho-restringido .logo {
-      height: 10vh;
-      transition: 0.3s; }
-      .bg-body-tertiary .ancho-restringido .logo:hover {
-        transform: rotate(-90deg); }
-    .bg-body-tertiary .ancho-restringido .navbar-collapse {
-      justify-content: flex-end; }
+  .bg-body-tertiary .logo {
+    height: 10vh;
+    transition: 0.3s; }
+    .bg-body-tertiary .logo:hover {
+      transform: rotate(-90deg); }
+  .bg-body-tertiary .navbar-collapse {
+    justify-content: flex-end; }
 
 .nav-link {
   height: 40px;
@@ -62,14 +66,21 @@ footer {
 .main-experiencia {
   padding: 0 8vw;
   margin: auto; }
+  .main-experiencia .bloque-texto__parrafo {
+    margin-top: 3%; }
   .main-experiencia .lista-experiencia__fecha {
     margin-top: 10px; }
 
 @media (min-width: 576px) {
   .main-experiencia {
-    padding: 0; } }
+    padding: 0;
+    min-height: 74vh;
+    margin-bottom: 20.7vh; } }
 
 /* Estilos pagina index */
+.main-index {
+  min-height: 93vh; }
+
 .imagen-index {
   margin-top: 4vh;
   margin-bottom: 4vh; }
@@ -96,6 +107,8 @@ ul {
   margin: auto;
   display: flex;
   flex-direction: column; }
+  .main-sobre-mi .sobre-mi {
+    padding-left: 4vw; }
   .main-sobre-mi .imagen-sobre-mi {
     padding: 4vw;
     max-width: 600px;
@@ -106,13 +119,14 @@ ul {
 @media (min-width: 768px) {
   .main-sobre-mi {
     margin-bottom: 44px;
-    padding: 16vh 4vw 0 4vw;
-    max-width: 1250px;
+    padding: 16vh 4vw 0 8vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
     .main-sobre-mi .sobre-mi {
-      max-width: 60vw; }
+      min-height: 74vh;
+      max-width: 50vw;
+      padding-right: 5vw; }
     .main-sobre-mi .imagen-sobre-mi {
       padding: 0;
       margin: 0;
@@ -128,9 +142,12 @@ ul {
   z-index: 2;
   padding: 0 8vw;
   margin: 0 auto;
-  margin-bottom: 52px; }
+  margin-bottom: 15vh;
+  min-height: 74vh; }
   .main-contacto .formulario__titulo {
-    margin-bottom: 2%; }
+    margin-bottom: 5vh; }
+  .main-contacto .formulario__container {
+    margin-top: 8vh; }
   .main-contacto .formulario__input, .main-contacto .formulario__textarea, .main-contacto .formulario__botton {
     width: 100%;
     background-color: rgba(20, 20, 20, 0.8);
@@ -144,7 +161,12 @@ ul {
 
 @media (min-width: 576px) {
   .main-contacto {
-    padding: 0; } }
+    min-height: 79.7vh;
+    padding: 0; }
+  .formulario__titulo {
+    margin-bottom: 5vh; }
+  .formulario__container {
+    margin-top: 10vh; } }
 
 /* Estilos generales */
 img {
@@ -156,5 +178,13 @@ img {
 body {
   background-color: #14070c; }
 
-.main-bajar-contenido {
+.container-fluid {
+  padding-left: 4%;
+  padding-right: 4%; }
+
+.bajar-contenido {
   padding-top: 16vh; }
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 90%; } }

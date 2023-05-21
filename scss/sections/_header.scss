@@ -1,23 +1,19 @@
 /* Estilos header */
 .bg-body-tertiary {
     background-color: rgba(0, 0, 0, 0.9) !important;
+    .logo {
+        height: 10vh;
+        transition: 0.3s;
 
-    .ancho-restringido {
-        max-width: 1200px;
-
-        .logo {
-            height: 10vh;
-            transition: 0.3s;
-
-            &:hover {
-                transform: rotate(-90deg);
-            }
-        }
-
-        .navbar-collapse {
-            justify-content: flex-end;
+        &:hover {
+            transform: rotate(-90deg);
         }
     }
+
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+
 }
 
 .nav-link {
@@ -38,6 +34,7 @@
     #navbarNav {
         padding-right: 2%;
     }
+
     .bg-body-tertiary {
         background-color: rgba(0, 0, 0, 0.5) !important;
     }
